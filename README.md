@@ -17,3 +17,12 @@ for rev in $(git rev-list --reverse screw-inet/topic/dmpr-ci-test-rewrite-1..top
 
 
 
+
+To find all commits that added or removed the fixed string whatever. The --all parameter means to start from every branch and --source means to show which of those branches led to finding that commit. It's often useful to add -p to show the patches that each of those commits would introduce as well.
+
+git log -S <whatever> --source --all
+
+
+
+
+
