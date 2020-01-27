@@ -23,6 +23,14 @@ To find all commits that added or removed the fixed string whatever. The --all p
 git log -S <whatever> --source --all
 
 
+# rebase on top of specific commit
+```
+git branch temp <commit>
+git checkout topic
+git rebase temp
+git branch -d temp
+```
+
 
 
 
